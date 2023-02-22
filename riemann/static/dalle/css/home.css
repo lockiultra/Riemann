@@ -1,0 +1,28 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeInText {
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.fadeInText p {
+    font-weight: lighter;
+}
+
+.fadeInText a {
+    color: black !important;
+    text-decoration: none;
+}

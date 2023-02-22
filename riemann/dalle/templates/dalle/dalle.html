@@ -1,0 +1,21 @@
+{% extends 'dalle/base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'dalle/css/dalle.css' %}">
+    <script src="{% static 'dalle/js/dalle.js' %}"></script>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="input-container">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="submit">Генерация</button>
+        </form>
+        
+    </div>
+    <div class="image-container">
+        <img src={{ img }} alt="Здесь будет ваше готовое изображение">
+    </div>
+</div>
+{% endblock %}

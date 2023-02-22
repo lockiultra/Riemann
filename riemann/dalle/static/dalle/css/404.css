@@ -1,0 +1,11 @@
+.container {
+    width: 50%;
+    padding-top: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}

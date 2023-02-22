@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Riemann</title>
+	<link rel="stylesheet" href="{% static 'dalle/css/base.css' %}">
+	{% block head %}
+	{% endblock %}
+</head>
+<body>
+	<div class="menu">
+		<header>
+			<a href="{% url 'main' %}"><img src={% static 'dalle/img/logo.png' %} alt="logo"></a>
+			<nav>
+				<ul>
+					<li><a href="{% url 'dalle' %}">Генератор</a></li>
+					<li><a href="{% url 'help' %}">Помощь</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			{% block content %}
+			{% endblock %}
+		</main>
+		<footer>
+			&copy; 2023 Riemann
+		</footer>
+	</div>
+</body>
+</html>

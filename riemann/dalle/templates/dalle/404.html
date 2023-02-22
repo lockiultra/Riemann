@@ -1,0 +1,12 @@
+{% extends 'dalle/base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'dalle/css/404.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <img src="{% static 'dalle/img/cat_404.png'%}" alt="">
+</div>
+{% endblock %}

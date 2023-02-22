@@ -1,0 +1,13 @@
+{% extends 'dalle/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'dalle/css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="fadeInText">
+        <h1>R I E M A N N</h1>
+        <p>RIEMANN - это проект по генерации изображений на основе текстовых описаний. Работа осуществляется на основе модели глубокого обучения DALL-E посредством <a href="https://openai.com/api/">OpenAI API</a>.</p>
+    </div>
+{% endblock %}
